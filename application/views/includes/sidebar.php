@@ -13,8 +13,8 @@
 	                                    <img src="../assets/img/d.jpg" class="img-circle user-img-circle" alt="User Image" />
 	                                </div>
 	                                <div class="pull-left info">
-	                                    <p> Diane Neuroth </p>
-	                                    <small>Admin</small>
+	                                    <p> <?php echo $this->session->userdata('username');?> </p>
+	                                    <small><?php echo $this->session->userdata('role_id');?></small>
 	                                </div>
 	                            </div>
 	                        </li>

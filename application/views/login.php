@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="assets/css/pages/extra_pages.css">
 </head>
 <body>
+    <?php print_r($message);?>
     <div class="limiter">
 		<div class="container-login100 page-background">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="<?php echo base_url().'login';?>" method="post">
 					<span class="login100-form-logo">
 						<img alt="" src="assets/img/logo1.png">
 					</span>
@@ -33,15 +34,15 @@
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 					<div class="wrap-input100 validate-select" data-validate="Select role">
-						<select class="select100">
+						<select class="select100" name="role">
 							   <option style="text-color: #000; color: #000">Select Role</option>
-                               <option style="text-color: #000; color: #000">Admin</option>
-                               <option style="text-color: #000; color: #000">Business Requester</option>
-                               <option style="text-color: #000; color: #000">Approval Head</option>
+                               <option style="text-color: #000; color: #000" value="1">Admin</option>
+                               <option style="text-color: #000; color: #000" value="2">Business Requester</option>
+                               <option style="text-color: #000; color: #000" value="3">Approval Head</option>
                                </select>
 						<span class="focus-select100" data-placeholder="&#xf26e;"></span>
 					</div>
