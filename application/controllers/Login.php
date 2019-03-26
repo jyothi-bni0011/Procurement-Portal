@@ -66,5 +66,9 @@ class Login extends CI_Controller {
 
         $this->load->view('login', $data);
     }
+   public function logout(){
+       $this->session->sess_destroy('userdata');
+       redirect(base_url().'login');
+   }
 
 }

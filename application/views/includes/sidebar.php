@@ -10,11 +10,22 @@
 	                        <li class="sidebar-user-panel">
 	                            <div class="user-panel">
 	                                <div class="pull-left image">
-	                                    <img src="../assets/img/d.jpg" class="img-circle user-img-circle" alt="User Image" />
+	                                    <img src="../../assets/img/d.jpg" class="img-circle user-img-circle" alt="User Image" />
 	                                </div>
 	                                <div class="pull-left info">
 	                                    <p> <?php echo $this->session->userdata('username');?> </p>
-	                                    <small><?php echo $this->session->userdata('role_id');?></small>
+	                                    <small><?php
+                                            switch ($this->session->userdata('role_id')){
+                                                case 1:
+                                                    echo "ADMIN";break;
+                                                case 2:
+                                                    echo "BR";break;
+                                                case 3:
+                                                    echo "AH";break;
+                                                case 3:
+                                                    echo "VENDOR";break;
+                                            }
+                                            ?></small>
 	                                </div>
 	                            </div>
 	                        </li>
