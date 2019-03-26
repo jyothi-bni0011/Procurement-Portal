@@ -210,7 +210,7 @@ border: solid 1px #e2e2e2;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-
+font-weight: 600;
   display: block;
 }
 .login100-form-logo img{
@@ -228,7 +228,14 @@ border: solid 1px #e2e2e2;
   width: 100%;
   position: relative;
   border-bottom: 3px solid rgba(135,135,135,0.1);
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.wrap-input101 {
+  width: 100%;
+  position: relative;
+  border-bottom: 3px solid rgba(135,135,135,0.1);
+  margin-top: 15px;
 }
 
 .input100, .select100 {
@@ -405,7 +412,7 @@ border: none;
   background: linear-gradient(bottom, #d7192b, #ae3541);
   position: relative;
   z-index: 1;
-
+margin-top: 18px;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -520,6 +527,9 @@ border: none;
 .p-b-34 {padding-bottom: 34px;}
 .p-t-27 {
     padding-top: 27px;
+}
+.p-t-03 {
+    padding-top: 03px;
 }
 .p-b-20{
 	padding-bottom: 20px;	
