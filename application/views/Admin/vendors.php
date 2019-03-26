@@ -7,23 +7,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title></title>
-	<!-- icons -->
-    <link href="../assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<!--bootstrap -->
-	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
-	   <!-- data tables -->
-    <link href="../assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
-    <link href="../assets/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />	
-	<!-- Material Design Lite CSS -->
-	<link href="../assets/plugins/material/material.min.css" rel="stylesheet" >
-	<link href="../assets/css/material_style.css" rel="stylesheet">
-	<!-- Theme Styles -->
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />	
-    <link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
-	<link href="../assets/css/pages/formlayout.css" rel="stylesheet" type="text/css" />
-	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- start styles -->
+		<?php $this->load->view('includes/styles'); ?>
+        <!-- end styles -->
  </head>
 <!-- END HEAD -->
 <body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white dark-color logo-dark">
@@ -54,7 +40,6 @@
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="card card-box">
-								
                                 <div class="card-body" id="bar-parent">
 				<a href="create-vendors.php" class="btn btn-success"><i class="fa fa-plus"></i> Create Vendors</a>
 								<a href="upload.php" class="btn btn-primary"><i class="fa fa-cloud-upload"></i> Upload Bulk Data </a>	
@@ -72,14 +57,11 @@
 														<th>Region </th>
 														<th>Status</th>
 														<th>Action</th>
-                                              
                                             </tr>
                                         </thead>
                                         <tbody>
 											<tr class="odd gradeX">
 														<td>1</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -90,7 +72,6 @@
 															<a href="#" class="btn btn-success btn-tbl-edit btn-xs">
 																<i class="fa fa-pencil"></i>
 															</a>
-															
 															<button class="btn btn-tbl-delete btn-circle" data-toggle="modal" data-target="#exampleModalCenter">
 																<i class="fa fa-trash-o "></i>
 															</button>
@@ -111,8 +92,6 @@
 											
 											<tr class="odd gradeX">
 														<td>2</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -123,7 +102,6 @@
 															<a href="#" class="btn btn-success btn-tbl-edit btn-xs">
 																<i class="fa fa-pencil"></i>
 															</a>
-															
 															<button class="btn btn-tbl-delete btn-circle" data-toggle="modal" data-target="#exampleModalCenter">
 																<i class="fa fa-trash-o "></i>
 															</button>
@@ -139,13 +117,10 @@
 					    </div>
 					  </div>
 														</td>
-															
 													</tr>
 											
 											<tr class="odd gradeX">
 														<td>3</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -156,7 +131,6 @@
 															<a href="#" class="btn btn-success btn-tbl-edit btn-xs">
 																<i class="fa fa-pencil"></i>
 															</a>
-															
 															<button class="btn btn-tbl-delete btn-circle" data-toggle="modal" data-target="#exampleModalCenter">
 																<i class="fa fa-trash-o "></i>
 															</button>
@@ -172,13 +146,10 @@
 					    </div>
 					  </div>
 														</td>
-															
 													</tr>
 											
 											<tr class="odd gradeX">
 														<td>4</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -186,10 +157,7 @@
 														<td>Danvers</td>
 														<td>Europe</td>
 														<td>
-															<a href="#" class="btn btn-success btn-tbl-edit btn-xs">
-																<i class="fa fa-pencil"></i>
-															</a>
-															
+			<a href="#" class="btn btn-success btn-tbl-edit btn-xs"><i class="fa fa-pencil"></i></a>
 															<button class="btn btn-tbl-delete btn-circle" data-toggle="modal" data-target="#exampleModalCenter">
 																<i class="fa fa-trash-o "></i>
 															</button>
@@ -205,13 +173,9 @@
 					    </div>
 					  </div>
 														</td>
-															
 													</tr>
-											
 											<tr class="odd gradeX">
 														<td>5</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -219,10 +183,7 @@
 														<td>Danvers</td>
 														<td>Europe</td>
 														<td>
-															<a href="#" class="btn btn-success btn-tbl-edit btn-xs">
-																<i class="fa fa-pencil"></i>
-															</a>
-															
+							<a href="#" class="btn btn-success btn-tbl-edit btn-xs"><i class="fa fa-pencil"></i></a>
 															<button class="btn btn-tbl-delete btn-circle" data-toggle="modal" data-target="#exampleModalCenter">
 																<i class="fa fa-trash-o "></i>
 															</button>
@@ -238,13 +199,9 @@
 					    </div>
 					  </div>
 														</td>
-															
 													</tr>
-											
 											<tr class="odd gradeX">
 														<td>6</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -252,10 +209,7 @@
 														<td>Danvers</td>
 														<td>Europe</td>
 														<td>
-															<a href="#" class="btn btn-success btn-tbl-edit btn-xs">
-																<i class="fa fa-pencil"></i>
-															</a>
-															
+<a href="#" class="btn btn-success btn-tbl-edit btn-xs"><i class="fa fa-pencil"></i></a>
 															<button class="btn btn-tbl-delete btn-circle" data-toggle="modal" data-target="#exampleModalCenter">
 																<i class="fa fa-trash-o "></i>
 															</button>
@@ -276,8 +230,6 @@
 											
 											<tr class="odd gradeX">
 														<td>7</td>
-														
-														
 														<td>Emma Tate</td>
 														<td>emma.tate@leicabiosystems.com</td>
 														<td>Finance Manager</td>
@@ -306,10 +258,6 @@
 														</td>
 															
 													</tr>
-											
-											
-											
-											
 										</tbody>
                                     </table>
                                     </div>

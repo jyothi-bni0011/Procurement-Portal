@@ -7,34 +7,20 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title></title>
-	<!-- icons -->
-    <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<!--bootstrap -->
-	<link href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
-	   <!-- data tables -->
-    <link href="../../assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
-    <link href="../../assets/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />	
-	<!-- Material Design Lite CSS -->
-	<link href="../../assets/plugins/material/material.min.css" rel="stylesheet" >
-	<link href="../../assets/css/material_style.css" rel="stylesheet">
-	<!-- Theme Styles -->
-    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css" />	
-    <link href="../../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
-	<link href="../../assets/css/pages/formlayout.css" rel="stylesheet" type="text/css" />
-	<link href="../../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- start styles -->
+		<?php $this->load->view('includes/styles'); ?>
+        <!-- end styles -->
  </head>
 <!-- END HEAD -->
 <body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white dark-color logo-dark">
     <div class="page-wrapper">
         <!-- start header -->
-		<?php include("../header.php"); ?>
+		<?php $this->load->view('includes/header'); ?>
         <!-- end header -->
         <!-- start page container -->
         <div class="page-container">
  			<!-- start sidebar menu -->
- 			<?php include("sidebar-admin.php"); ?>
+ 			<?php $this->load->view('includes/sidebar'); ?>
 			 <!-- end sidebar menu -->
 			<!-- start page content -->
             <div class="page-content-wrapper">
@@ -176,11 +162,11 @@
         </div>
         <!-- end page container -->
         <!-- start footer -->
-        <?php include("../footer.php"); ?>
+        <?php $this->load->view('includes/footer'); ?>
         <!-- end footer -->
     </div>
  <!-- start js include path -->
-     <?php include("../scripts.php"); ?>
+     <?php $this->load->view('includes/scripts'); ?>
      <!-- end js include path -->
   </body>
 </html>
