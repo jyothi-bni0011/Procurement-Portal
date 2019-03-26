@@ -28,7 +28,7 @@
 						Forgot Your Password? Let Us Help You.
 					</p>
 					<div class="wrap-input100 validate-input" data-validate = "Enter Official Email ID">
-						<input class="input100" type="text" name="username" placeholder="Enter Your Official Email ID">
+						<input class="input100" type="text" name="useremail" placeholder="Enter Your Official Email ID">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 					<div class="container-login100-form-btn">

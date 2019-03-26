@@ -3,7 +3,7 @@
                 <!-- logo start -->
                 <div class="page-logo">
                     <a href="index.html">
-                    <span class="logo-default"><img alt="" src="../assets/img/logo.png"></span>
+                    <span class="logo-default"><img alt="" src="../../assets/img/logo.png"></span>
                     </a>
                 </div>
                 <!-- logo end -->
@@ -95,7 +95,7 @@
  						<!-- start manage user dropdown -->
  						<li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+                                <img alt="" class="img-circle " src="../../assets/img/dp.jpg" />
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
                                 <li>
@@ -111,7 +111,7 @@
                         </li>
                         <!-- end manage user dropdown -->
                         <li class="dropdown dropdown-quick-sidebar-toggler">
-                             <a id="headerSettingButton" class="mdl-button mdl-js-button mdl-button--icon pull-right" data-upgraded=",MaterialButton">
+                             <a id="headerSettingButton" class="mdl-button mdl-js-button mdl-button--icon pull-right" data-upgraded=",MaterialButton" href="<?php echo base_url().'logout';?>">
 	                           <i class="material-icons">logout</i>
 	                        </a>
                         </li>
