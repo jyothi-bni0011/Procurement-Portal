@@ -19,37 +19,37 @@
 	                            </div>
 	                        </li>
 	                        <li class="nav-item active open">
-	                            <a href="index.php" class="nav-link nav-toggle">
+	                            <a href="<?php echo base_url().'admin/dashboard';?>" class="nav-link nav-toggle">
 	                                <i class="material-icons">dashboard</i>
 	                                <span class="title">Dashboard</span>
 	                                <span class="selected"></span>
 	                            </a>
 	                        </li>
 							  <li class="nav-item">
-	                            <a href="business-requesters.php" class="nav-link nav-toggle">
+	                            <a href="<?php echo base_url().'admin/Bussines_requesters';?>" class="nav-link nav-toggle">
 	                                <i class="material-icons">dashboard</i>
 	                                <span class="title">Business Requesters</span>
 	                                <span class="selected"></span>
 	                            </a>
 	                        </li>
 	                        <li class="nav-item">
-	                            <a href="vendors.php" class="nav-link nav-toggle">
+	                            <a href="<?php echo base_url().'admin/Vendors';?>" class="nav-link nav-toggle">
 	                                <i class="material-icons">how_to_reg</i>
 	                                <span class="title">Vendors</span>
 	                            </a>
 	                        </li>
 							<li class="nav-item">
-	                            <a href="approval-head.php" class="nav-link nav-toggle">
+	                            <a href="<?php echo base_url().'admin/Approval_heads';?>" class="nav-link nav-toggle">
 	                                <i class="material-icons">how_to_reg</i>
 	                                <span class="title">Approval Heads</span>
 	                            </a>
 	                        </li>
 	                        <li class="nav-item">
-	                            <a href="regions.php" class="nav-link nav-toggle"><i class="material-icons">account_circle</i>
+	                            <a href="<?php echo base_url().'admin/Regions';?>" class="nav-link nav-toggle"><i class="material-icons">account_circle</i>
 	                            <span class="title">Regions</span></a>
 	                        </li>
 							 <li class="nav-item">
-	                            <a href="sites.php" class="nav-link nav-toggle"><i class="material-icons">library_books</i>
+	                            <a href="<?php echo base_url().'admin/Sites';?>" class="nav-link nav-toggle"><i class="material-icons">library_books</i>
 	                            <span class="title">Sites</span></a>
 	                        </li>
 							
