@@ -9,4 +9,8 @@ class Vendors extends CI_Controller {
         $this->load->view('Admin/vendors');
     }
 
+    public function create() {
+        $this->load->view('Admin/create-vendors');
+    }
+
 }

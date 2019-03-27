@@ -31,7 +31,7 @@ class Login extends CI_Controller {
                         'email_id' => $result->email,
                         'status' => $result->status,
                         'role_id' => $result->role_id,
-                        'logged_time' => date('Y-m-d H:i:s')
+                        'login_time' => date('Y-m-d H:i:s')
                     );
                     $this->session->set_userdata($session_data);
                     $log_data = ['user_id' => $result->user_id,

@@ -3,7 +3,7 @@
                 <!-- logo start -->
                 <div class="page-logo">
                     <a href="index.html">
-                    <span class="logo-default"><img alt="" src="../../assets/img/logo.png"></span>
+                    <span class="logo-default"><img alt="" src="<?php echo base_url();?>assets/img/logo.png"></span>
                     </a>
                 </div>
                 <!-- logo end -->
@@ -95,7 +95,7 @@
  						<!-- start manage user dropdown -->
  						<li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle " src="../../assets/img/dp.jpg" />
+                                <img alt="" class="img-circle " src="<?php echo base_url();?>assets/img/dp.jpg" />
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
                                 <li>
