@@ -8,5 +8,6 @@ class Dashboard extends CI_Controller {
 //        print_r($this->session->userdata());exit;
         $this->load->view('Admin/index');
     }
+    
 
 }

@@ -9,4 +9,8 @@ class Approval_heads extends CI_Controller {
         $this->load->view('Admin/approval-head');
     }
 
+    public function create() {
+        $this->load->view('Admin/create-approval-head');
+    }
+
 }

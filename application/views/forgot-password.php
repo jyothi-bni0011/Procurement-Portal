@@ -8,20 +8,20 @@
     <meta name="author" content="" />
     <title></title>
 	<!-- icons -->
-    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="assets/plugins/iconic/css/material-design-iconic-font.min.css">
+    <link href="<?php echo base_url();?>assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/iconic/css/material-design-iconic-font.min.css">
     <!-- bootstrap -->
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url();?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- style -->
-    <link rel="stylesheet" href="assets/css/pages/extra_pages.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/pages/extra_pages.css">
 </head>
 <body>
     <div class="limiter">
 		<div class="container-login100 page-background">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url().'Forgot_password';?>">
 					<span class="login100-form-logo">
-						<img alt="" src="assets/img/logo1.png">
+						<img alt="" src="<?php echo base_url();?>assets/img/logo1.png">
 					</span>
 					
 					<p class="text-center txt-small-heading">
@@ -31,6 +31,9 @@
 						<input class="input100" type="text" name="useremail" placeholder="Enter Your Official Email ID">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
+                                        <span style="color:red;">
+                                            <?php if($message!=''){echo $message;}?>
+                                        </span>
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Submit
@@ -47,10 +50,10 @@
 		</div>
 	</div>
     <!-- start js include path -->
-     <script src="assets/plugins/jquery/jquery.min.js" ></script>
+     <script src="<?php echo base_url();?>assets/plugins/jquery/jquery.min.js" ></script>
     <!-- bootstrap -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
-    <script src="assets/js/pages/extra_pages/extra_pages.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <script src="<?php echo base_url();?>assets/js/pages/extra_pages/extra_pages.js"></script>
     <!-- end js include path -->
 </body>
 </html>

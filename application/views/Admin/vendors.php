@@ -41,7 +41,7 @@
                         <div class="col-md-12 col-sm-12">
                             <div class="card card-box">
                                 <div class="card-body" id="bar-parent">
-				<a href="create-vendors.php" class="btn btn-success"><i class="fa fa-plus"></i> Create Vendors</a>
+				<a href="<?php echo base_url().'admin/vendors/create';?>" class="btn btn-success"><i class="fa fa-plus"></i> Create Vendors</a>
 								<a href="upload.php" class="btn btn-primary"><i class="fa fa-cloud-upload"></i> Upload Bulk Data </a>	
 									<a href="upload.php" class="btn btn-secondary"><i class="fa fa-cloud-upload"></i> Send Documents </a>
 									

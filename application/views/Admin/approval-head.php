@@ -42,7 +42,7 @@
                             <div class="card card-box">
 								
                                 <div class="card-body" id="bar-parent">
-				<a href="create-approval-head.php" class="btn btn-success"><i class="fa fa-plus"></i> Create Approval Head</a>
+				<a href="<?php echo base_url().'admin/approval_heads/create';?>" class="btn btn-success"><i class="fa fa-plus"></i> Create Approval Head</a>
                                     <div class="table-scrollable">
                                     <table id="tableExport" class="display table table-hover table-checkable order-column m-t-20" style="width: 100%">
                                         <thead>

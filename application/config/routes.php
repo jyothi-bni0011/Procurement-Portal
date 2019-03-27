@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['logout'] = 'Login/logout';
+$route['reset-password/(:any)/(:any)'] = 'Reset_password/do_reset/$i/$i';
