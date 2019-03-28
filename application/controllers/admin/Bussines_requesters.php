@@ -5,7 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Bussines_requesters extends CI_Controller {
 
     public function index() {
-        $this->load->view('Admin/business-requesters');
+        $data['users_list'] = $this->crud->readdata('*', 'users', array('status' => 1))->result_array();
+        $this->load->view('Admin/business-requesters',$data);
     }
 
     public function create() {
@@ -29,6 +30,7 @@ class Bussines_requesters extends CI_Controller {
                 if (count($result)) {
                     $data['message'] = "Email alredy exists,please try with other valid email";
                 } else {
+                    $rand_pwd= my_random_string(6);
                     $insert_data = [
                         'user_code' => "BR_" . my_random_string(4, $this->input->post('username')),
                         'role_id' => 2,
@@ -38,7 +40,7 @@ class Bussines_requesters extends CI_Controller {
                         'site_id' => $this->input->post('site'),
                         'job_title_id' => $this->input->post('job_title'),
                         'functional_area_id' => $this->input->post('functional_area'),
-                        'password' => md5('br@1234'),
+                        'password' => md5($rand_pwd),
                         'created_at' => DATE,
                         'status' => 1,
                     ];
@@ -49,7 +51,7 @@ class Bussines_requesters extends CI_Controller {
                             'creater_name' => $session_data['username'],
                             'creater_role' => "ADMIN",
                             'user_name' => $this->input->post('username'),
-                            'password'=>"br@1234",
+                            'password'=>$rand_pwd,
                         ];
                         $sendEmail = $this->sendmail->sendEmail(
                                 array(
@@ -76,7 +78,7 @@ class Bussines_requesters extends CI_Controller {
 //                $this->session->set_flashdata('error_message',validation_errors());
             }
         }
-        $this->load->view('Admin/create-business-requesters');
+        $this->load->view('Admin/create-business-requesters',$data);
     }
 
 }
