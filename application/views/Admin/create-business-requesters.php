@@ -116,7 +116,7 @@
                                                         </select> </div>
                                                 </div>
 
-
+                                                <span style="color:red;"><?php echo $message;?></span>
                                                 <div class="form-actions">
                                                     <div class="row">
                                                         <div class="offset-md-3 col-md-9">

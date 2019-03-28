@@ -7,7 +7,7 @@
  */
 defined('BASEPATH') or exit('No direct script access allowed');
 
-function my_random_string($length_of_string,$spec_string) 
+function my_random_string($length_of_string,$spec_string=NULL) 
 { 
   
     // String of all alphanumeric character 

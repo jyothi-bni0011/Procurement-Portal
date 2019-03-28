@@ -45,7 +45,6 @@
                                <option style="text-color: #000; color: #000" value="1">Admin</option>
                                <option style="text-color: #000; color: #000" value="2">Business Requester</option>
                                <option style="text-color: #000; color: #000" value="3">Approval Head</option>
-                               <option style="text-color: #000; color: #000" value="4">Vendor</option>
                                </select>
 						<span class="focus-select100" data-placeholder="&#xf26e;"></span>
 					</div>

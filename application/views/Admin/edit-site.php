@@ -28,14 +28,14 @@
                         <div class="page-bar">
                             <div class="page-title-breadcrumb">
                                 <div class=" pull-left">
-                                    <div class="page-title">Create Site</div>
+                                    <div class="page-title">Edit Site</div>
                                 </div>
                                 <ol class="breadcrumb page-breadcrumb pull-right">
                                     <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.php">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
                                     </li>
-                                    <li><a class="parent-item" href="sites.php">Sites</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                    <li><a class="parent-item" href="sites.php">Regions</a>&nbsp;<i class="fa fa-angle-right"></i>
                                     </li>
-                                    <li class="active">Create Site</li>
+                                    <li class="active">Create site</li>
                                 </ol>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="col-md-12 col-sm-12">
                                 <div class="card card-box">
                                     <div class="card-body" id="bar-parent">
-                                        <form action="<?php echo base_url() . 'admin/sites/create'; ?>" id="create_form" class="form-horizontal" method="post">
+                                        <form action="<?php echo base_url() . 'admin/sites/edit/' . base64_encode($sites_row[0]['site_id']); ?>" id="create_form" class="form-horizontal" method="post">
                                             <div class="form-body">
 
                                                 <div class="form-group row">
@@ -53,7 +53,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-5">
-                                                        <input type="text" name="site_name"  id="site_name" data-required="1" placeholder="Enter Site name" class="form-control input-height">
+                                                        <input type="text" name="site_name"  id="site_name" value="<?php echo $sites_row[0]['site_name']; ?>" data-required="1" placeholder="Enter Region name" class="form-control input-height">
                                                     </div>
                                                     <span class="error" id="site_name_err"></span>
                                                 </div>
@@ -63,7 +63,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-5">
-                                                        <input type="text" name="owner_name" id="owner_name" data-required="1" placeholder="Enter Site Owner" class="form-control input-height">
+                                                        <input type="text" name="owner_name" id="owner_name" value="<?php echo $sites_row[0]['site_owner']; ?>" data-required="1" placeholder="Enter Region Owner" class="form-control input-height">
                                                     </div>
                                                     <span class="error" id="owner_name_err"></span>
 
@@ -75,7 +75,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-5">
-                                                        <input type="email" name="owner_email" id="owner_email" data-required="1" placeholder="Enter Email ID" class="form-control input-height">
+                                                        <input type="email" name="owner_email" id="owner_email" value="<?php echo $sites_row[0]['site_owner_email']; ?>" data-required="1" placeholder="Enter Email ID" class="form-control input-height">
                                                     </div>
                                                     <span class="error" id="owner_email_err"></span>
                                                 </div>
@@ -85,20 +85,19 @@
                                                     </label>
                                                     <div class="col-md-5">
                                                         <select class="form-control input-height" name="region" id="region">
-                                                            <option value="">Select Region</option>
+                                                            <option value="">Select region</option>
                                                             <?php
                                                             foreach ($region_list as $region_data) {
                                                                 ?>
-                                                                <option value="<?php echo $region_data['region_id'] ?>"><?php echo $region_data['region_name'] ?></option>
+                                                                <option value="<?php echo $region_data['region_id'];?>" <?php if($region_data['region_id']==$sites_row[0]['region_id']){echo "selected";}?>><?php echo $region_data['region_name'] ?></option>
                                                             <?php } ?>
                                                         </select> </div>
                                                     <span class="error" id="region_err"></span>
                                                 </div>
-
                                                 <div class="form-actions">
                                                     <div class="row">
                                                         <div class="offset-md-3 col-md-9">
-                                                            <button type="submit" class="btn btn-danger" id="create_button">Create</button>
+                                                            <button type="submit" class="btn btn-danger" id="create_button">update</button>
                                                             <a href="<?php echo base_url() . 'admin/sites'; ?>"><button type="button" class="btn btn-default">Cancel</button></a>
                                                         </div>
                                                     </div>
@@ -122,7 +121,7 @@
         <!-- start js include path -->
         <?php $this->load->view('includes/scripts'); ?>
         <!-- end js include path -->
-        <script type="text/javascript">
+       <script type="text/javascript">
             $('#create_button').on('click', function (e) {
                 e.preventDefault();
                 str = true;

@@ -18,3 +18,8 @@
 	 <!--select2-->
     <link href="<?php echo base_url();?>assets/plugins/select2/css/select2.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url();?>assets/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .error{
+            color:red;
+        }
+    </style>
